@@ -16,6 +16,6 @@ jobs:
             SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
           args: >
-              -Dsonar.organization=hariharan-k21
-              -Dsonar.projectKey=SonarQube-Integration
+              -Dsonar.organization=hariharan-k21                      # GitHub Account Name (Organization)
+              -Dsonar.projectKey=SonarQube-Integration                # GitHub Repo Created for this task
               -Dsonar.python.coverage.reportPaths=coverage.xml
